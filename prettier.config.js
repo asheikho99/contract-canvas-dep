@@ -6,9 +6,9 @@ module.exports = {
   importOrder: [
     "^react$",
     "",
-    "<THIRD_PARTY_MODULES>",
+    "^(@/lib|@/components|@/assets)(/.*)$",
     "",
-    "^(@lib|@components|@ui|@assets)(/.*)$",
+    "<THIRD_PARTY_MODULES>",
     "",
     "^(?!.*[.]css$)[./].*$",
     "",
