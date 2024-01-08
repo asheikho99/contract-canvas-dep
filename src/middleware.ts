@@ -9,7 +9,7 @@ export default auth((req) => {
 
     if (isAuthPage) {
         if (isAuth) {
-            return NextResponse.redirect(new URL('/dashboard', req.url))
+            return NextResponse.redirect(new URL('/backstage/dashboard', req.url))
         }
 
         return null
@@ -25,5 +25,5 @@ export default auth((req) => {
 })
 
 export const config = {
-    matcher: ["/dashboard/:path*", "/backstage/:path*"],
+    matcher: ["/backstage/:path*"],
 }
