@@ -1,4 +1,4 @@
-import NextAuth from "next-auth"
+import NextAuth, { NextAuthConfig } from "next-auth"
 import GoogleProvider from "@auth/core/providers/google"
 
 export const {
@@ -15,5 +15,5 @@ export const {
     },
     pages: {
         signIn: "/backstage/login"
-    },
-})
+    }
+} satisfies NextAuthConfig)
